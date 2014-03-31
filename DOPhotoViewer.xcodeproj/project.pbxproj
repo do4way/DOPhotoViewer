@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D3248D18E959E300AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3248C18E959E300AA73AF /* UIKit.framework */; };
+		85D324DD18E965E700AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3248C18E959E300AA73AF /* UIKit.framework */; };
+		85F23C6618E94E5000DA348A /* DOPSliderPhotoViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6118E94E5000DA348A /* DOPSliderPhotoViewerViewController.m */; };
+		85F23C6718E94E5000DA348A /* DOPZoomingScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6418E94E5000DA348A /* DOPZoomingScrollImageView.m */; };
+		85F23C6818E94E5000DA348A /* DOUrlPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6518E94E5000DA348A /* DOUrlPhoto.m */; };
+		85F23C6E18E94F1B00DA348A /* DOPTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6C18E94F1B00DA348A /* DOPTestUtils.m */; };
+		85F23C6F18E94F1B00DA348A /* DOPUrlPhotoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6D18E94F1B00DA348A /* DOPUrlPhotoTest.m */; };
+		85F23C7018E9558D00DA348A /* libDOPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20B18E94D85004B8305 /* libDOPhotoViewer.a */; };
+		85F23C7218E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F23C7118E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a */; };
 		85F8E20F18E94D85004B8305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20E18E94D85004B8305 /* Foundation.framework */; };
-		85F8E21418E94D85004B8305 /* DOPhotoViewer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85F8E21318E94D85004B8305 /* DOPhotoViewer.h */; };
-		85F8E21618E94D85004B8305 /* DOPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F8E21518E94D85004B8305 /* DOPhotoViewer.m */; };
 		85F8E21D18E94D85004B8305 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E21C18E94D85004B8305 /* XCTest.framework */; };
 		85F8E21E18E94D85004B8305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20E18E94D85004B8305 /* Foundation.framework */; };
-		85F8E22018E94D85004B8305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E21F18E94D85004B8305 /* UIKit.framework */; };
-		85F8E22318E94D85004B8305 /* libDOPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20B18E94D85004B8305 /* libDOPhotoViewer.a */; };
 		85F8E22918E94D85004B8305 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85F8E22718E94D85004B8305 /* InfoPlist.strings */; };
-		85F8E22B18E94D85004B8305 /* DOPhotoViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F8E22A18E94D85004B8305 /* DOPhotoViewerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,24 +39,36 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				85F8E21418E94D85004B8305 /* DOPhotoViewer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		027C1B09E0624D3AB19E68FB /* Pods-DOPhotoViewerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOPhotoViewerTests.xcconfig"; path = "Pods/Pods-DOPhotoViewerTests.xcconfig"; sourceTree = "<group>"; };
+		4530E75DE0D04A4C93E1411C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D3248C18E959E300AA73AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85D324DE18E965EF00AA73AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		85F23C5E18E94E5000DA348A /* DOPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPCommon.h; sourceTree = "<group>"; };
+		85F23C5F18E94E5000DA348A /* DOPhotoViewerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPhotoViewerProtocols.h; sourceTree = "<group>"; };
+		85F23C6018E94E5000DA348A /* DOPSliderPhotoViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPSliderPhotoViewerViewController.h; sourceTree = "<group>"; };
+		85F23C6118E94E5000DA348A /* DOPSliderPhotoViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPSliderPhotoViewerViewController.m; sourceTree = "<group>"; };
+		85F23C6218E94E5000DA348A /* DOPUrlPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPUrlPhoto.h; sourceTree = "<group>"; };
+		85F23C6318E94E5000DA348A /* DOPZoomingScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPZoomingScrollImageView.h; sourceTree = "<group>"; };
+		85F23C6418E94E5000DA348A /* DOPZoomingScrollImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPZoomingScrollImageView.m; sourceTree = "<group>"; };
+		85F23C6518E94E5000DA348A /* DOUrlPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUrlPhoto.m; sourceTree = "<group>"; };
+		85F23C6B18E94F1B00DA348A /* DOPTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPTestUtils.h; sourceTree = "<group>"; };
+		85F23C6C18E94F1B00DA348A /* DOPTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPTestUtils.m; sourceTree = "<group>"; };
+		85F23C6D18E94F1B00DA348A /* DOPUrlPhotoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPUrlPhotoTest.m; sourceTree = "<group>"; };
+		85F23C7118E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-DOPhotoViewerTests-OCMock.a"; path = "Pods/build/Debug-iphoneos/libPods-DOPhotoViewerTests-OCMock.a"; sourceTree = "<group>"; };
 		85F8E20B18E94D85004B8305 /* libDOPhotoViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDOPhotoViewer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F8E20E18E94D85004B8305 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85F8E21218E94D85004B8305 /* DOPhotoViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOPhotoViewer-Prefix.pch"; sourceTree = "<group>"; };
-		85F8E21318E94D85004B8305 /* DOPhotoViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOPhotoViewer.h; sourceTree = "<group>"; };
-		85F8E21518E94D85004B8305 /* DOPhotoViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOPhotoViewer.m; sourceTree = "<group>"; };
 		85F8E21B18E94D85004B8305 /* DOPhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DOPhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F8E21C18E94D85004B8305 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		85F8E21F18E94D85004B8305 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		85F8E22618E94D85004B8305 /* DOPhotoViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DOPhotoViewerTests-Info.plist"; sourceTree = "<group>"; };
 		85F8E22818E94D85004B8305 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		85F8E22A18E94D85004B8305 /* DOPhotoViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOPhotoViewerTests.m; sourceTree = "<group>"; };
+		871D75BA8A744B0785206D10 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D324DD18E965E700AA73AF /* UIKit.framework in Frameworks */,
 				85F8E20F18E94D85004B8305 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,16 +85,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F8E21D18E94D85004B8305 /* XCTest.framework in Frameworks */,
-				85F8E22018E94D85004B8305 /* UIKit.framework in Frameworks */,
+				85D3248D18E959E300AA73AF /* UIKit.framework in Frameworks */,
 				85F8E21E18E94D85004B8305 /* Foundation.framework in Frameworks */,
-				85F8E22318E94D85004B8305 /* libDOPhotoViewer.a in Frameworks */,
+				85F8E21D18E94D85004B8305 /* XCTest.framework in Frameworks */,
+				85F23C7218E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a in Frameworks */,
+				85F23C7018E9558D00DA348A /* libDOPhotoViewer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85D324E618E96D3200AA73AF /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				85F23C5E18E94E5000DA348A /* DOPCommon.h */,
+				85F23C5F18E94E5000DA348A /* DOPhotoViewerProtocols.h */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		85D324E718E96D4900AA73AF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85F23C6018E94E5000DA348A /* DOPSliderPhotoViewerViewController.h */,
+				85F23C6118E94E5000DA348A /* DOPSliderPhotoViewerViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85D324E818E96D5700AA73AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85F23C6318E94E5000DA348A /* DOPZoomingScrollImageView.h */,
+				85F23C6418E94E5000DA348A /* DOPZoomingScrollImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		85D324E918E96D6300AA73AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85F23C6218E94E5000DA348A /* DOPUrlPhoto.h */,
+				85F23C6518E94E5000DA348A /* DOUrlPhoto.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		85F8E20218E94D85004B8305 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +139,8 @@
 				85F8E22418E94D85004B8305 /* DOPhotoViewerTests */,
 				85F8E20D18E94D85004B8305 /* Frameworks */,
 				85F8E20C18E94D85004B8305 /* Products */,
+				871D75BA8A744B0785206D10 /* Pods.xcconfig */,
+				027C1B09E0624D3AB19E68FB /* Pods-DOPhotoViewerTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +156,12 @@
 		85F8E20D18E94D85004B8305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85D324DE18E965EF00AA73AF /* ImageIO.framework */,
+				85D3248C18E959E300AA73AF /* UIKit.framework */,
+				85F23C7118E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a */,
 				85F8E20E18E94D85004B8305 /* Foundation.framework */,
 				85F8E21C18E94D85004B8305 /* XCTest.framework */,
-				85F8E21F18E94D85004B8305 /* UIKit.framework */,
+				4530E75DE0D04A4C93E1411C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +169,10 @@
 		85F8E21018E94D85004B8305 /* DOPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				85F8E21318E94D85004B8305 /* DOPhotoViewer.h */,
-				85F8E21518E94D85004B8305 /* DOPhotoViewer.m */,
+				85D324E618E96D3200AA73AF /* Commons */,
+				85D324E718E96D4900AA73AF /* ViewControllers */,
+				85D324E818E96D5700AA73AF /* Views */,
+				85D324E918E96D6300AA73AF /* Models */,
 				85F8E21118E94D85004B8305 /* Supporting Files */,
 			);
 			path = DOPhotoViewer;
@@ -128,7 +189,9 @@
 		85F8E22418E94D85004B8305 /* DOPhotoViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				85F8E22A18E94D85004B8305 /* DOPhotoViewerTests.m */,
+				85F23C6B18E94F1B00DA348A /* DOPTestUtils.h */,
+				85F23C6C18E94F1B00DA348A /* DOPTestUtils.m */,
+				85F23C6D18E94F1B00DA348A /* DOPUrlPhotoTest.m */,
 				85F8E22518E94D85004B8305 /* Supporting Files */,
 			);
 			path = DOPhotoViewerTests;
@@ -150,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85F8E22E18E94D85004B8305 /* Build configuration list for PBXNativeTarget "DOPhotoViewer" */;
 			buildPhases = (
+				9C9CE051413A4B918F1C9C4D /* Check Pods Manifest.lock */,
 				85F8E20718E94D85004B8305 /* Sources */,
 				85F8E20818E94D85004B8305 /* Frameworks */,
 				85F8E20918E94D85004B8305 /* CopyFiles */,
+				91C868A0669D45C1AA9AFB40 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85F8E23118E94D85004B8305 /* Build configuration list for PBXNativeTarget "DOPhotoViewerTests" */;
 			buildPhases = (
+				4031DBC85FAB452CADDC0335 /* Check Pods Manifest.lock */,
 				85F8E21718E94D85004B8305 /* Sources */,
 				85F8E21818E94D85004B8305 /* Frameworks */,
 				85F8E21918E94D85004B8305 /* Resources */,
+				A158AD6670B14F4EAE912747 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +286,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4031DBC85FAB452CADDC0335 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91C868A0669D45C1AA9AFB40 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C9CE051413A4B918F1C9C4D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A158AD6670B14F4EAE912747 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-DOPhotoViewerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85F8E20718E94D85004B8305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F8E21618E94D85004B8305 /* DOPhotoViewer.m in Sources */,
+				85F23C6618E94E5000DA348A /* DOPSliderPhotoViewerViewController.m in Sources */,
+				85F23C6718E94E5000DA348A /* DOPZoomingScrollImageView.m in Sources */,
+				85F23C6818E94E5000DA348A /* DOUrlPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F8E22B18E94D85004B8305 /* DOPhotoViewerTests.m in Sources */,
+				85F23C6F18E94F1B00DA348A /* DOPUrlPhotoTest.m in Sources */,
+				85F23C6E18E94F1B00DA348A /* DOPTestUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -322,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -330,11 +463,12 @@
 		};
 		85F8E22F18E94D85004B8305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871D75BA8A744B0785206D10 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DOPhotoViewer.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DOPhotoViewer/DOPhotoViewer-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -342,11 +476,12 @@
 		};
 		85F8E23018E94D85004B8305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871D75BA8A744B0785206D10 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DOPhotoViewer.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DOPhotoViewer/DOPhotoViewer-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -354,6 +489,7 @@
 		};
 		85F8E23218E94D85004B8305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027C1B09E0624D3AB19E68FB /* Pods-DOPhotoViewerTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -368,6 +504,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "DOPhotoViewerTests/DOPhotoViewerTests-Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -375,6 +512,7 @@
 		};
 		85F8E23318E94D85004B8305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027C1B09E0624D3AB19E68FB /* Pods-DOPhotoViewerTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -385,6 +523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DOPhotoViewer/DOPhotoViewer-Prefix.pch";
 				INFOPLIST_FILE = "DOPhotoViewerTests/DOPhotoViewerTests-Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -409,6 +548,7 @@
 				85F8E23018E94D85004B8305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85F8E23118E94D85004B8305 /* Build configuration list for PBXNativeTarget "DOPhotoViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +557,7 @@
 				85F8E23318E94D85004B8305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

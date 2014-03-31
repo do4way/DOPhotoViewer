@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85D3249B18E95A9A00AA73AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249A18E95A9A00AA73AF /* Foundation.framework */; };
+		85D3249D18E95A9A00AA73AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249C18E95A9A00AA73AF /* CoreGraphics.framework */; };
+		85D3249F18E95A9A00AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249E18E95A9A00AA73AF /* UIKit.framework */; };
+		85D324A518E95A9A00AA73AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85D324A318E95A9A00AA73AF /* InfoPlist.strings */; };
+		85D324A718E95A9A00AA73AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D324A618E95A9A00AA73AF /* main.m */; };
+		85D324AB18E95A9A00AA73AF /* DOPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D324AA18E95A9A00AA73AF /* DOPAppDelegate.m */; };
+		85D324AD18E95A9A00AA73AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D324AC18E95A9A00AA73AF /* Images.xcassets */; };
+		85D324B418E95A9A00AA73AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324B318E95A9A00AA73AF /* XCTest.framework */; };
+		85D324B518E95A9A00AA73AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249A18E95A9A00AA73AF /* Foundation.framework */; };
+		85D324B618E95A9A00AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249E18E95A9A00AA73AF /* UIKit.framework */; };
+		85D324BE18E95A9A00AA73AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85D324BC18E95A9A00AA73AF /* InfoPlist.strings */; };
+		85D324C018E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D324BF18E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m */; };
+		85D324CD18E95B6B00AA73AF /* DOPPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D324CB18E95B6B00AA73AF /* DOPPhotoViewController.m */; };
+		85D324CF18E95B7400AA73AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D324CE18E95B7400AA73AF /* Main.storyboard */; };
+		85D324E118E9684200AA73AF /* libDOPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324D718E95EDA00AA73AF /* libDOPhotoViewer.a */; };
+		85D324E318E9685B00AA73AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324E218E9685B00AA73AF /* libPods.a */; };
+		85D324E518E9687B00AA73AF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324E418E9687B00AA73AF /* ImageIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85D324B718E95A9A00AA73AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D3248F18E95A9A00AA73AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D3249618E95A9A00AA73AF;
+			remoteInfo = "DOPhotoViewer DEMO";
+		};
+		85D324D618E95EDA00AA73AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85F8E20B18E94D85004B8305;
+			remoteInfo = DOPhotoViewer;
+		};
+		85D324D818E95EDA00AA73AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85F8E21B18E94D85004B8305;
+			remoteInfo = DOPhotoViewerTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85D3249718E95A9A00AA73AF /* DOPhotoViewer DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOPhotoViewer DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D3249A18E95A9A00AA73AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85D3249C18E95A9A00AA73AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85D3249E18E95A9A00AA73AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85D324A218E95A9A00AA73AF /* DOPhotoViewer DEMO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DOPhotoViewer DEMO-Info.plist"; sourceTree = "<group>"; };
+		85D324A418E95A9A00AA73AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85D324A618E95A9A00AA73AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85D324A818E95A9A00AA73AF /* DOPhotoViewer DEMO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOPhotoViewer DEMO-Prefix.pch"; sourceTree = "<group>"; };
+		85D324A918E95A9A00AA73AF /* DOPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOPAppDelegate.h; sourceTree = "<group>"; };
+		85D324AA18E95A9A00AA73AF /* DOPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOPAppDelegate.m; sourceTree = "<group>"; };
+		85D324AC18E95A9A00AA73AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85D324B218E95A9A00AA73AF /* DOPhotoViewer DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOPhotoViewer DEMOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D324B318E95A9A00AA73AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		85D324BB18E95A9A00AA73AF /* DOPhotoViewer DEMOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DOPhotoViewer DEMOTests-Info.plist"; sourceTree = "<group>"; };
+		85D324BD18E95A9A00AA73AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85D324BF18E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOPhotoViewer_DEMOTests.m; sourceTree = "<group>"; };
+		85D324CB18E95B6B00AA73AF /* DOPPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPPhotoViewController.m; sourceTree = "<group>"; };
+		85D324CC18E95B6B00AA73AF /* DOPPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPPhotoViewController.h; sourceTree = "<group>"; };
+		85D324CE18E95B7400AA73AF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DOPhotoViewer.xcodeproj; path = ../DOPhotoViewer.xcodeproj; sourceTree = "<group>"; };
+		85D324E218E9685B00AA73AF /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "../Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		85D324E418E9687B00AA73AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85D3249418E95A9A00AA73AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D3249D18E95A9A00AA73AF /* CoreGraphics.framework in Frameworks */,
+				85D324E518E9687B00AA73AF /* ImageIO.framework in Frameworks */,
+				85D324E318E9685B00AA73AF /* libPods.a in Frameworks */,
+				85D324E118E9684200AA73AF /* libDOPhotoViewer.a in Frameworks */,
+				85D3249F18E95A9A00AA73AF /* UIKit.framework in Frameworks */,
+				85D3249B18E95A9A00AA73AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D324AF18E95A9A00AA73AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D324B418E95A9A00AA73AF /* XCTest.framework in Frameworks */,
+				85D324B618E95A9A00AA73AF /* UIKit.framework in Frameworks */,
+				85D324B518E95A9A00AA73AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85D3248E18E95A9A00AA73AF = {
+			isa = PBXGroup;
+			children = (
+				85D324A018E95A9A00AA73AF /* DOPhotoViewer DEMO */,
+				85D324B918E95A9A00AA73AF /* DOPhotoViewer DEMOTests */,
+				85D3249918E95A9A00AA73AF /* Frameworks */,
+				85D3249818E95A9A00AA73AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85D3249818E95A9A00AA73AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D3249718E95A9A00AA73AF /* DOPhotoViewer DEMO.app */,
+				85D324B218E95A9A00AA73AF /* DOPhotoViewer DEMOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85D3249918E95A9A00AA73AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85D324E418E9687B00AA73AF /* ImageIO.framework */,
+				85D324E218E9685B00AA73AF /* libPods.a */,
+				85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */,
+				85D3249A18E95A9A00AA73AF /* Foundation.framework */,
+				85D3249C18E95A9A00AA73AF /* CoreGraphics.framework */,
+				85D3249E18E95A9A00AA73AF /* UIKit.framework */,
+				85D324B318E95A9A00AA73AF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85D324A018E95A9A00AA73AF /* DOPhotoViewer DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				85D324CE18E95B7400AA73AF /* Main.storyboard */,
+				85D324A918E95A9A00AA73AF /* DOPAppDelegate.h */,
+				85D324AA18E95A9A00AA73AF /* DOPAppDelegate.m */,
+				85D324CB18E95B6B00AA73AF /* DOPPhotoViewController.m */,
+				85D324CC18E95B6B00AA73AF /* DOPPhotoViewController.h */,
+				85D324AC18E95A9A00AA73AF /* Images.xcassets */,
+				85D324A118E95A9A00AA73AF /* Supporting Files */,
+			);
+			path = "DOPhotoViewer DEMO";
+			sourceTree = "<group>";
+		};
+		85D324A118E95A9A00AA73AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85D324A218E95A9A00AA73AF /* DOPhotoViewer DEMO-Info.plist */,
+				85D324A318E95A9A00AA73AF /* InfoPlist.strings */,
+				85D324A618E95A9A00AA73AF /* main.m */,
+				85D324A818E95A9A00AA73AF /* DOPhotoViewer DEMO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85D324B918E95A9A00AA73AF /* DOPhotoViewer DEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				85D324BF18E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m */,
+				85D324BA18E95A9A00AA73AF /* Supporting Files */,
+			);
+			path = "DOPhotoViewer DEMOTests";
+			sourceTree = "<group>";
+		};
+		85D324BA18E95A9A00AA73AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85D324BB18E95A9A00AA73AF /* DOPhotoViewer DEMOTests-Info.plist */,
+				85D324BC18E95A9A00AA73AF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85D324D218E95EDA00AA73AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D324D718E95EDA00AA73AF /* libDOPhotoViewer.a */,
+				85D324D918E95EDA00AA73AF /* DOPhotoViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85D3249618E95A9A00AA73AF /* DOPhotoViewer DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D324C318E95A9A00AA73AF /* Build configuration list for PBXNativeTarget "DOPhotoViewer DEMO" */;
+			buildPhases = (
+				85D3249318E95A9A00AA73AF /* Sources */,
+				85D3249418E95A9A00AA73AF /* Frameworks */,
+				85D3249518E95A9A00AA73AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DOPhotoViewer DEMO";
+			productName = "DOPhotoViewer DEMO";
+			productReference = 85D3249718E95A9A00AA73AF /* DOPhotoViewer DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85D324B118E95A9A00AA73AF /* DOPhotoViewer DEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D324C618E95A9A00AA73AF /* Build configuration list for PBXNativeTarget "DOPhotoViewer DEMOTests" */;
+			buildPhases = (
+				85D324AE18E95A9A00AA73AF /* Sources */,
+				85D324AF18E95A9A00AA73AF /* Frameworks */,
+				85D324B018E95A9A00AA73AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D324B818E95A9A00AA73AF /* PBXTargetDependency */,
+			);
+			name = "DOPhotoViewer DEMOTests";
+			productName = "DOPhotoViewer DEMOTests";
+			productReference = 85D324B218E95A9A00AA73AF /* DOPhotoViewer DEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85D3248F18E95A9A00AA73AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DOP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "DODOPIPE LIMITED";
+				TargetAttributes = {
+					85D324B118E95A9A00AA73AF = {
+						TestTargetID = 85D3249618E95A9A00AA73AF;
+					};
+				};
+			};
+			buildConfigurationList = 85D3249218E95A9A00AA73AF /* Build configuration list for PBXProject "DOPhotoViewer DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85D3248E18E95A9A00AA73AF;
+			productRefGroup = 85D3249818E95A9A00AA73AF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85D324D218E95EDA00AA73AF /* Products */;
+					ProjectRef = 85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				85D3249618E95A9A00AA73AF /* DOPhotoViewer DEMO */,
+				85D324B118E95A9A00AA73AF /* DOPhotoViewer DEMOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		85D324D718E95EDA00AA73AF /* libDOPhotoViewer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDOPhotoViewer.a;
+			remoteRef = 85D324D618E95EDA00AA73AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85D324D918E95EDA00AA73AF /* DOPhotoViewerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DOPhotoViewerTests.xctest;
+			remoteRef = 85D324D818E95EDA00AA73AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85D3249518E95A9A00AA73AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D324CF18E95B7400AA73AF /* Main.storyboard in Resources */,
+				85D324A518E95A9A00AA73AF /* InfoPlist.strings in Resources */,
+				85D324AD18E95A9A00AA73AF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D324B018E95A9A00AA73AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D324BE18E95A9A00AA73AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85D3249318E95A9A00AA73AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D324CD18E95B6B00AA73AF /* DOPPhotoViewController.m in Sources */,
+				85D324AB18E95A9A00AA73AF /* DOPAppDelegate.m in Sources */,
+				85D324A718E95A9A00AA73AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D324AE18E95A9A00AA73AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D324C018E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85D324B818E95A9A00AA73AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D3249618E95A9A00AA73AF /* DOPhotoViewer DEMO */;
+			targetProxy = 85D324B718E95A9A00AA73AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85D324A318E95A9A00AA73AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D324A418E95A9A00AA73AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85D324BC18E95A9A00AA73AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D324BD18E95A9A00AA73AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85D324C118E95A9A00AA73AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../DOPhotoViewer,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85D324C218E95A9A00AA73AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../DOPhotoViewer,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85D324C418E95A9A00AA73AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DOPhotoViewer DEMO/DOPhotoViewer DEMO-Prefix.pch";
+				INFOPLIST_FILE = "DOPhotoViewer DEMO/DOPhotoViewer DEMO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DOPhotoViewer-gailsurpreyhsqeyesnbbkillxay/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85D324C518E95A9A00AA73AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DOPhotoViewer DEMO/DOPhotoViewer DEMO-Prefix.pch";
+				INFOPLIST_FILE = "DOPhotoViewer DEMO/DOPhotoViewer DEMO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DOPhotoViewer-gailsurpreyhsqeyesnbbkillxay/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		85D324C718E95A9A00AA73AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DOPhotoViewer DEMO.app/DOPhotoViewer DEMO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DOPhotoViewer DEMO/DOPhotoViewer DEMO-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DOPhotoViewer DEMOTests/DOPhotoViewer DEMOTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		85D324C818E95A9A00AA73AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DOPhotoViewer DEMO.app/DOPhotoViewer DEMO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DOPhotoViewer DEMO/DOPhotoViewer DEMO-Prefix.pch";
+				INFOPLIST_FILE = "DOPhotoViewer DEMOTests/DOPhotoViewer DEMOTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D3249218E95A9A00AA73AF /* Build configuration list for PBXProject "DOPhotoViewer DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D324C118E95A9A00AA73AF /* Debug */,
+				85D324C218E95A9A00AA73AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D324C318E95A9A00AA73AF /* Build configuration list for PBXNativeTarget "DOPhotoViewer DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D324C418E95A9A00AA73AF /* Debug */,
+				85D324C518E95A9A00AA73AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85D324C618E95A9A00AA73AF /* Build configuration list for PBXNativeTarget "DOPhotoViewer DEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D324C718E95A9A00AA73AF /* Debug */,
+				85D324C818E95A9A00AA73AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85D3248F18E95A9A00AA73AF /* Project object */;
+}

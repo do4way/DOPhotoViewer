@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		85D3248D18E959E300AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3248C18E959E300AA73AF /* UIKit.framework */; };
 		85D324DD18E965E700AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3248C18E959E300AA73AF /* UIKit.framework */; };
+		85D324F118E987FB00AA73AF /* libPods-DOPhotoViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324F018E987FB00AA73AF /* libPods-DOPhotoViewerTests.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		85F23C6618E94E5000DA348A /* DOPSliderPhotoViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6118E94E5000DA348A /* DOPSliderPhotoViewerViewController.m */; };
 		85F23C6718E94E5000DA348A /* DOPZoomingScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6418E94E5000DA348A /* DOPZoomingScrollImageView.m */; };
 		85F23C6818E94E5000DA348A /* DOUrlPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6518E94E5000DA348A /* DOUrlPhoto.m */; };
 		85F23C6E18E94F1B00DA348A /* DOPTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6C18E94F1B00DA348A /* DOPTestUtils.m */; };
 		85F23C6F18E94F1B00DA348A /* DOPUrlPhotoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F23C6D18E94F1B00DA348A /* DOPUrlPhotoTest.m */; };
 		85F23C7018E9558D00DA348A /* libDOPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20B18E94D85004B8305 /* libDOPhotoViewer.a */; };
-		85F23C7218E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F23C7118E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a */; };
 		85F8E20F18E94D85004B8305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20E18E94D85004B8305 /* Foundation.framework */; };
 		85F8E21D18E94D85004B8305 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E21C18E94D85004B8305 /* XCTest.framework */; };
 		85F8E21E18E94D85004B8305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8E20E18E94D85004B8305 /* Foundation.framework */; };
@@ -46,9 +46,9 @@
 
 /* Begin PBXFileReference section */
 		027C1B09E0624D3AB19E68FB /* Pods-DOPhotoViewerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOPhotoViewerTests.xcconfig"; path = "Pods/Pods-DOPhotoViewerTests.xcconfig"; sourceTree = "<group>"; };
-		4530E75DE0D04A4C93E1411C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D3248C18E959E300AA73AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85D324DE18E965EF00AA73AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		85D324F018E987FB00AA73AF /* libPods-DOPhotoViewerTests.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-DOPhotoViewerTests.a"; path = "Pods/build/Debug-iphoneos/libPods-DOPhotoViewerTests.a"; sourceTree = "<group>"; };
 		85F23C5E18E94E5000DA348A /* DOPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPCommon.h; sourceTree = "<group>"; };
 		85F23C5F18E94E5000DA348A /* DOPhotoViewerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPhotoViewerProtocols.h; sourceTree = "<group>"; };
 		85F23C6018E94E5000DA348A /* DOPSliderPhotoViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPSliderPhotoViewerViewController.h; sourceTree = "<group>"; };
@@ -60,7 +60,6 @@
 		85F23C6B18E94F1B00DA348A /* DOPTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPTestUtils.h; sourceTree = "<group>"; };
 		85F23C6C18E94F1B00DA348A /* DOPTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPTestUtils.m; sourceTree = "<group>"; };
 		85F23C6D18E94F1B00DA348A /* DOPUrlPhotoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPUrlPhotoTest.m; sourceTree = "<group>"; };
-		85F23C7118E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-DOPhotoViewerTests-OCMock.a"; path = "Pods/build/Debug-iphoneos/libPods-DOPhotoViewerTests-OCMock.a"; sourceTree = "<group>"; };
 		85F8E20B18E94D85004B8305 /* libDOPhotoViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDOPhotoViewer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F8E20E18E94D85004B8305 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85F8E21218E94D85004B8305 /* DOPhotoViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOPhotoViewer-Prefix.pch"; sourceTree = "<group>"; };
@@ -88,8 +87,8 @@
 				85D3248D18E959E300AA73AF /* UIKit.framework in Frameworks */,
 				85F8E21E18E94D85004B8305 /* Foundation.framework in Frameworks */,
 				85F8E21D18E94D85004B8305 /* XCTest.framework in Frameworks */,
-				85F23C7218E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a in Frameworks */,
 				85F23C7018E9558D00DA348A /* libDOPhotoViewer.a in Frameworks */,
+				85D324F118E987FB00AA73AF /* libPods-DOPhotoViewerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,12 +155,11 @@
 		85F8E20D18E94D85004B8305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85D324F018E987FB00AA73AF /* libPods-DOPhotoViewerTests.a */,
 				85D324DE18E965EF00AA73AF /* ImageIO.framework */,
 				85D3248C18E959E300AA73AF /* UIKit.framework */,
-				85F23C7118E955C000DA348A /* libPods-DOPhotoViewerTests-OCMock.a */,
 				85F8E20E18E94D85004B8305 /* Foundation.framework */,
 				85F8E21C18E94D85004B8305 /* XCTest.framework */,
-				4530E75DE0D04A4C93E1411C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

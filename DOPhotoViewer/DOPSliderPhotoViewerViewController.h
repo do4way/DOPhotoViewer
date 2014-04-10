@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DOPhotoViewerProtocols.h"
+@protocol DOPhotoViewerDelegate;
+@protocol DOPhotoViewerDataSource;
+
 
 @interface DOPSliderPhotoViewerViewController : UIViewController <UIScrollViewDelegate>
 
 @property (nonatomic, weak) IBOutlet id<DOPhotoViewerDataSource> dataSourceDelegate;
-
+@property (nonatomic, weak) IBOutlet id<DOPhotoViewerDelegate> delegate;
 
 @end

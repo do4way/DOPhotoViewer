@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="1188" y="290"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--View Controller-->
         <scene sceneID="Waw-GA-sRP">
             <objects>
-                <viewController id="p2z-1S-FCF" customClass="DOPPhotoViewController" sceneMemberID="viewController">
+                <viewController id="p2z-1S-FCF" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hqw-69-8mI"/>
                         <viewControllerLayoutGuide type="bottom" id="vic-25-yvq"/>
@@ -41,9 +41,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F9W-kK-r7w" kind="push" id="Oyb-Gz-2g3"/>
+                                    <segue destination="F9W-kK-r7w" kind="modal" id="Oyb-Gz-2g3"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-He-jVC">
+                                <rect key="frame" x="73" y="106" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -51,12 +57,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPd-j0-2Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="297"/>
+            <point key="canvasLocation" x="1574" y="214"/>
         </scene>
-        <!--Slider Photo Viewer View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="qVq-DY-Rzg">
             <objects>
-                <viewController id="F9W-kK-r7w" customClass="DOPSliderPhotoViewerViewController" sceneMemberID="viewController">
+                <viewController id="F9W-kK-r7w" customClass="DOPPhotoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wRz-rz-VsE"/>
                         <viewControllerLayoutGuide type="bottom" id="y3m-XK-8pr"/>

@@ -17,13 +17,11 @@
 
 @property (nonatomic, strong) NSMutableArray *pages;
 @property (nonatomic, strong) UIScrollView   *pagingScrollView;
-@property (nonatomic, strong) UIPageControl  *pageControl;
 @property (nonatomic) NSUInteger currentPageIndex;
 
 @end
 
 @implementation DOPSliderPhotoViewerViewController
-
 
 
 #pragma mark - view loading
@@ -39,13 +37,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     self.view.clipsToBounds = YES;
-    
-    NSLog(@"View did load in slider photo viewer.");
     [self preparePagingScrollView];
-    [self registerTapGestureRecognizer];
     [self createPages];
-    self.currentPageIndex = [self startAtPage];
+    self.currentPageIndex = [self __startAtPage];
     [self scrollToPage: self.currentPageIndex];
+    
 
 }
 
@@ -71,18 +67,9 @@
     _pagingScrollView.contentSize = [self contentSizeForPagingScrollView];
     _pagingScrollView.contentOffset = [self contentOffsetForPageAtIndex:_currentPageIndex];
     
-    self.pageControl.numberOfPages = [self numberOfPhotos];
-    self.pageControl.currentPage = 0;
     [self.view addSubview:_pagingScrollView];
 }
 
--(void) registerTapGestureRecognizer
-{
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                 action:@selector(segueBackward)];
-    tapGesture.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:tapGesture];
-}
 
 #pragma mark - Layout
 
@@ -122,8 +109,11 @@
     _pagingScrollView.contentSize = [self contentSizeForPagingScrollView];
     NSUInteger idx = 0;
     for (DOPZoomingScrollImageView* page in self.pages ) {
-        [page scaleToFitScreen];
-        page.frame = [self frameForPageAtIndex:idx++];
+        if ((NSNull *) page != [NSNull null]) {
+            [page scaleToFitScreen];
+            page.frame = [self frameForPageAtIndex:idx++];
+            
+        }
     }
     CGRect bounds = self.pagingScrollView.bounds;
     bounds.origin.x = CGRectGetWidth(bounds) * self.currentPageIndex;
@@ -132,24 +122,36 @@
     
 }
 
+#pragma mark - tap gesture recognizer 
+- (void) onTapped:(UIGestureRecognizer*) sender
+{
+    if (sender.state == UIGestureRecognizerStateEnded ) {
+        
+        NSLog(@"single tapped");
+    }
+}
 
 
 #pragma mark - private methods
 - (void) createPages
 {
     self.pages = [[NSMutableArray alloc] init];
-    NSUInteger numberOfPhotos = [self numberOfPhotos];
+    NSUInteger numberOfPhotos = [self __numberOfPhotos];
 
     
     for (NSUInteger idx = 0; idx < numberOfPhotos; idx++)
     {
-        [self.pages addObject:[NSNull null]];
+        DOPZoomingScrollImageView *view = [[DOPZoomingScrollImageView alloc] init];
+        NSLog(@"view controller photoview delegate: %@", self.delegate);
+        NSLog(@"datasource delegate: %@", self.dataSourceDelegate);
+        [view setPhotoViewerDelegate:self.delegate];
+        [self.pages addObject:view];
     }
 }
 
 - (void) loadPageAtIndex:(NSUInteger) idx
 {
-    if (idx >= [self numberOfPhotos] ) return;
+    if (idx >= [self __numberOfPhotos] ) return;
     DOPZoomingScrollImageView* page = [self.pages objectAtIndex:idx];
     
     if ((NSNull *) page == [NSNull null]) {
@@ -161,7 +163,7 @@
     if ( page.superview == nil ) {
         CGRect pageFrame = [self frameForPageAtIndex:idx];
         page.frame = pageFrame;
-        DOPUrlPhoto* photo = [DOPUrlPhoto photoWithURL:[self photoUrlAtIndex:idx]];
+        DOPUrlPhoto* photo = [DOPUrlPhoto photoWithURL:[self __photoUrlAtIndex:idx]];
         [page loadPhoto:photo];
         [self.pagingScrollView addSubview:page];
     }
@@ -206,34 +208,28 @@
 - (CGSize) contentSizeForPagingScrollView
 {
     CGRect bounds = _pagingScrollView.bounds;
-    return CGSizeMake(bounds.size.width * [self numberOfPhotos], bounds.size.height);
+    return CGSizeMake(bounds.size.width * [self __numberOfPhotos], bounds.size.height);
 }
 
-- (IBAction) segueBackward
-{
-    
-}
 
 - (CGPoint) contentOffsetForPageAtIndex:(NSUInteger) idx
 {
-    NSLog(@"index:%lu", (unsigned long)idx);
     CGFloat pageWidth = self.pagingScrollView.bounds.size.width;
     CGFloat newOffset = idx * pageWidth;
-    NSLog(@"offset, %f", newOffset);
     return CGPointMake(newOffset,0);
 }
 
-- (NSUInteger) numberOfPhotos
+- (NSUInteger) __numberOfPhotos
 {
     return [self.dataSourceDelegate numberOfPhotos];
 }
 
-- (NSURL *) photoUrlAtIndex: (NSUInteger) idx
+- (NSURL *) __photoUrlAtIndex: (NSUInteger) idx
 {
     return [self.dataSourceDelegate photoUrlAtIndex:idx];
 }
 
-- (NSUInteger) startAtPage{
+- (NSUInteger) __startAtPage{
     if ([self.dataSourceDelegate respondsToSelector:@selector(startAtPage)])
         return [self.dataSourceDelegate startAtPage];
     return 0;

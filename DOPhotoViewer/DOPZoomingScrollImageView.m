@@ -8,14 +8,15 @@
 
 #import "DOPZoomingScrollImageView.h"
 #import "DACircularProgressView.h"
+#import "DOPhotoViewerProtocols.h"
 #import "DOPCommon.h"
 #import "DOPUrlPhoto.h"
 
 @interface DOPZoomingScrollImageView()
 
 @property (nonatomic,strong) DOPUrlPhoto* photo;
-@property (nonatomic, strong) UIImageView* photoImageView;
-@property (nonatomic, strong) DACircularProgressView* loadingIndicator;
+@property (nonatomic,strong) UIImageView* photoImageView;
+@property (nonatomic,strong) DACircularProgressView* loadingIndicator;
 
 @end
 
@@ -140,6 +141,11 @@
     
 }
 
+- (void) onSingleTapped:(UIGestureRecognizer *) gestureRecognizer
+{
+    [self.photoViewerDelegate tapToExit];
+}
+
 #pragma  mark - private methods
 
 - (void) initPhotoImageView
@@ -166,7 +172,6 @@
                                         UIViewAutoresizingFlexibleTopMargin |
                                         UIViewAutoresizingFlexibleRightMargin |
                                         UIViewAutoresizingFlexibleBottomMargin;
-    NSLog(@"add indicator, %@", _loadingIndicator);
     [self addSubview:_loadingIndicator];
 }
 
@@ -187,6 +192,11 @@
                                                                                     action:@selector(onImageTapped:)];
     [tapRecognizer setNumberOfTapsRequired:2];
     [self addGestureRecognizer:tapRecognizer];
+    UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onSingleTapped:)];
+    singleTapGesture.numberOfTapsRequired = 1;
+    [self addGestureRecognizer:singleTapGesture];
+    [singleTapGesture requireGestureRecognizerToFail:tapRecognizer];
+    
 }
 
 

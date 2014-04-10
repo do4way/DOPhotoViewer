@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		857706F918F6BDCE00CB341E /* libDOPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857706F818F6BDCE00CB341E /* libDOPhotoViewer.a */; };
+		857706FB18F6BFFA00CB341E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857706FA18F6BFFA00CB341E /* libPods.a */; };
 		85D3249B18E95A9A00AA73AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249A18E95A9A00AA73AF /* Foundation.framework */; };
 		85D3249D18E95A9A00AA73AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249C18E95A9A00AA73AF /* CoreGraphics.framework */; };
 		85D3249F18E95A9A00AA73AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D3249E18E95A9A00AA73AF /* UIKit.framework */; };
@@ -21,8 +23,6 @@
 		85D324C018E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D324BF18E95A9A00AA73AF /* DOPhotoViewer_DEMOTests.m */; };
 		85D324CD18E95B6B00AA73AF /* DOPPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D324CB18E95B6B00AA73AF /* DOPPhotoViewController.m */; };
 		85D324CF18E95B7400AA73AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D324CE18E95B7400AA73AF /* Main.storyboard */; };
-		85D324E118E9684200AA73AF /* libDOPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324D718E95EDA00AA73AF /* libDOPhotoViewer.a */; };
-		85D324E318E9685B00AA73AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324E218E9685B00AA73AF /* libPods.a */; };
 		85D324E518E9687B00AA73AF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D324E418E9687B00AA73AF /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,23 +34,11 @@
 			remoteGlobalIDString = 85D3249618E95A9A00AA73AF;
 			remoteInfo = "DOPhotoViewer DEMO";
 		};
-		85D324D618E95EDA00AA73AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 85F8E20B18E94D85004B8305;
-			remoteInfo = DOPhotoViewer;
-		};
-		85D324D818E95EDA00AA73AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 85F8E21B18E94D85004B8305;
-			remoteInfo = DOPhotoViewerTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		857706F818F6BDCE00CB341E /* libDOPhotoViewer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDOPhotoViewer.a; path = "../build/Debug-iphoneos/libDOPhotoViewer.a"; sourceTree = "<group>"; };
+		857706FA18F6BFFA00CB341E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "../Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		85D3249718E95A9A00AA73AF /* DOPhotoViewer DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOPhotoViewer DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D3249A18E95A9A00AA73AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85D3249C18E95A9A00AA73AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,8 +58,6 @@
 		85D324CB18E95B6B00AA73AF /* DOPPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPPhotoViewController.m; sourceTree = "<group>"; };
 		85D324CC18E95B6B00AA73AF /* DOPPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPPhotoViewController.h; sourceTree = "<group>"; };
 		85D324CE18E95B7400AA73AF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DOPhotoViewer.xcodeproj; path = ../DOPhotoViewer.xcodeproj; sourceTree = "<group>"; };
-		85D324E218E9685B00AA73AF /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "../Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		85D324E418E9687B00AA73AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -80,10 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857706FB18F6BFFA00CB341E /* libPods.a in Frameworks */,
+				857706F918F6BDCE00CB341E /* libDOPhotoViewer.a in Frameworks */,
 				85D3249D18E95A9A00AA73AF /* CoreGraphics.framework in Frameworks */,
 				85D324E518E9687B00AA73AF /* ImageIO.framework in Frameworks */,
-				85D324E318E9685B00AA73AF /* libPods.a in Frameworks */,
-				85D324E118E9684200AA73AF /* libDOPhotoViewer.a in Frameworks */,
 				85D3249F18E95A9A00AA73AF /* UIKit.framework in Frameworks */,
 				85D3249B18E95A9A00AA73AF /* Foundation.framework in Frameworks */,
 			);
@@ -124,9 +110,9 @@
 		85D3249918E95A9A00AA73AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				857706FA18F6BFFA00CB341E /* libPods.a */,
+				857706F818F6BDCE00CB341E /* libDOPhotoViewer.a */,
 				85D324E418E9687B00AA73AF /* ImageIO.framework */,
-				85D324E218E9685B00AA73AF /* libPods.a */,
-				85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */,
 				85D3249A18E95A9A00AA73AF /* Foundation.framework */,
 				85D3249C18E95A9A00AA73AF /* CoreGraphics.framework */,
 				85D3249E18E95A9A00AA73AF /* UIKit.framework */,
@@ -176,15 +162,6 @@
 				85D324BC18E95A9A00AA73AF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		85D324D218E95EDA00AA73AF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				85D324D718E95EDA00AA73AF /* libDOPhotoViewer.a */,
-				85D324D918E95EDA00AA73AF /* DOPhotoViewerTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +227,6 @@
 			mainGroup = 85D3248E18E95A9A00AA73AF;
 			productRefGroup = 85D3249818E95A9A00AA73AF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 85D324D218E95EDA00AA73AF /* Products */;
-					ProjectRef = 85D324D118E95EDA00AA73AF /* DOPhotoViewer.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				85D3249618E95A9A00AA73AF /* DOPhotoViewer DEMO */,
@@ -263,23 +234,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		85D324D718E95EDA00AA73AF /* libDOPhotoViewer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libDOPhotoViewer.a;
-			remoteRef = 85D324D618E95EDA00AA73AF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		85D324D918E95EDA00AA73AF /* DOPhotoViewerTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DOPhotoViewerTests.xctest;
-			remoteRef = 85D324D818E95EDA00AA73AF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		85D3249518E95A9A00AA73AF /* Resources */ = {
@@ -530,6 +484,7 @@
 				85D324C518E95A9A00AA73AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85D324C618E95A9A00AA73AF /* Build configuration list for PBXNativeTarget "DOPhotoViewer DEMOTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +493,7 @@
 				85D324C818E95A9A00AA73AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

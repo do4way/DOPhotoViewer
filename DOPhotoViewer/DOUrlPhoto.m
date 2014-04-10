@@ -99,7 +99,6 @@
                        if (error) {
                            NSLog(@"There is an error occurred when downloading image for url (%@) with error (%@)", self.url, error);
                        }
-                       NSLog(@"load completed");
                        _webImageOperation = nil;
                        self.image = image;
                        [self imageLoadingComplete];

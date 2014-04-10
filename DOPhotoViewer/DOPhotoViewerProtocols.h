@@ -22,3 +22,12 @@
 - (NSUInteger) startAtPage;
 
 @end
+
+
+@protocol DOPhotoViewerDelegate <NSObject>
+
+@required
+
+- (void) tapToExit;
+
+@end

@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 @class DOPUrlPhoto;
+@protocol DOPhotoViewerDelegate;
 
 @interface DOPZoomingScrollImageView : UIScrollView <UIScrollViewDelegate>
+
+@property (nonatomic, weak) id<DOPhotoViewerDelegate> photoViewerDelegate;
 
 - (instancetype) initWithFrame:(CGRect)frame photo:(DOPUrlPhoto *) photo;
 - (void) loadPhoto:(DOPUrlPhoto *) photo;

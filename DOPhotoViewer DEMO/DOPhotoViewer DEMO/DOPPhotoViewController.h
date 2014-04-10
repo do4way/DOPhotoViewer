@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "DOPSliderPhotoViewerViewController.h"
+#import "DOPhotoViewerProtocols.h"
+@protocol DOPhotoViewerDelegate;
+@protocol DOPhotoViewerDataSource;
 
-@interface DOPPhotoViewController : DOPSliderPhotoViewerViewController
+@interface DOPPhotoViewController : DOPSliderPhotoViewerViewController<DOPhotoViewerDataSource, DOPhotoViewerDelegate>
 
 @end

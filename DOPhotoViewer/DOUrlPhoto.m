@@ -85,26 +85,22 @@
     self.loadingInProgress = YES;
     SDWebImageManager *manager = [SDWebImageManager sharedManager];
     _webImageOperation =
-    [manager downloadWithURL:self.url
-                     options:0
-                    progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-                        if (expectedSize > 0 ) {
-                            float progress = receivedSize / (float) expectedSize;
-                            NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:progress], @"progress", self, @"photo", nil];
-                            [[NSNotificationCenter defaultCenter] postNotificationName:DOPURLPHOTO_PROGRESS_NOTIFICATION
-                                                                                object:dict];
-                        }
-                    }
-                   completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
-                       if (error) {
-                           NSLog(@"There is an error occurred when downloading image for url (%@) with error (%@)", self.url, error);
-                       }
-                       _webImageOperation = nil;
-                       self.image = image;
-                       [self imageLoadingComplete];
-                       
-                   }];
-    
+    [manager downloadImageWithURL:self.url options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        if (expectedSize > 0 ) {
+            float progress = receivedSize / (float) expectedSize;
+            NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:progress], @"progress", self, @"photo", nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:DOPURLPHOTO_PROGRESS_NOTIFICATION
+                                                                object:dict];
+        }
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        if (error) {
+            NSLog(@"There is an error occurred when downloading image for url (%@) with error (%@)", self.url, error);
+        }
+        _webImageOperation = nil;
+        self.image = image;
+        [self imageLoadingComplete];
+    }];
+
 }
 
 @end

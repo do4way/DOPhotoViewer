@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DOPhotoViewerProtocols.h"
+#import <UIKit/UIKit.h>
 
 @interface DOPUrlPhoto : NSObject
 
